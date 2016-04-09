@@ -1,0 +1,68 @@
+
+<html> 
+    
+<head>
+        <link href="spanish.css" rel="stylesheet" />
+		<title>Learn a new language</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="spanish.js"></script>
+</head>
+    
+ <body onload = "codeAddress()">
+	   <header>
+                    <img src="kangaroo.png" width="250" height="250" />
+	               <center> <h1>Spanish Right now!</h1>
+                    <h5>Learn spanish in a few days</h5></center>
+	   </header>
+	   <nav class="n">
+	               <ul>
+                        <li><input class="colors" onclick="clickListenerColors1()"     type="button" value="Colors level 1" id=colors1></a></li>
+                             <li><input class="colors" onclick="clickListenerColors2()"     type="button" value="Colors level 2" id=colors2></a></li>
+                        <li><input class="numbers" onclick="clickListenerNumbers1()" type="button" value="Numbers level 1" id=numbers1></a></li>
+                        <li><input class="numbers" onclick="clickListenerNumbers2()" type="button" value="Numbers level 2" id=numbers2></a></li>
+                        <li><input class="animals" onclick="clickListenerAnimals1()" type="button"                                              value="Animals level 1" id=animals1></a></li>
+                        <li><input class="animals" onclick="clickListenerAnimals2()" type="button"                                              value="Animals level 2" id=animals2></a></li>
+                   </ul>
+	   </nav> 
+             <div class="middel" > 
+                              <div class="left">
+                        <aside class="aside1">
+                        <div class="score">
+                           <ins><b>Score:</b></ins><label id="score" ></label> <br/>
+                           <ins><b>Challenges Completed:</b></ins><label id="challenges" ></label> <br/>
+                           <div id = "colors"> Colors Completed<img src="trophy.png" width="50"                             height="50" /> </div> 
+                            <div id = "num">Numbers Completed<img src="trophy.png"   width="50" height="50" /> </div>  
+                            <div id = "animals">Animals Completed<img src="trophy.png" width="50"                             height="50" /> </div>  
+                            </div>
+                        </aside>   
+        </div>
+        <main>
+           <div id ="game"> <!-- <form>-->
+                   <center> <div id = "pic">
+                       </div></center>
+                    <div class="down">
+                      <center>
+                    
+                            <input class="left" onclick="clickListenerLeft()" type="button"                                     value="Left" id=myButton1></input>
+                            <input class="right" onclick="clickListenerRight()" type="button"                                     value="Right" id=myButton2></input>
+                    </center>
+                    </div>
+                 </div>
+                 <div id ="text">
+                     <h1>welcome!!</br>please pick your first challenge</h1>
+                </div>
+                 <div id ="done">
+                     <h1>Congratulations,level completed</br>please pick another</h1>
+                </div>
+                     
+        </main>
+     </div>                
+		  <footer>
+              <h6>All rights reserve to our website(c)<br/>
+			     For Terms of Service Press<a href = "http://www.youtube.com" target="_blank">Here </a><br/>
+                  07/11/2015</h6>
+
+	      </footer>
+        window.onload = codeAddress;
+    </body>
+</html>
